@@ -31,7 +31,10 @@ def calc_cc(file_name):
     for i in range(len(tmp.function_list)):
         ccs.append(tmp.function_list[i].cyclomatic_complexity)
 
-    return nloc , sum(ccs)
+    if not ccs:
+        return nloc, 0
+
+    return nloc , statistics.mean(ccs)
 
 def main():
     startpath = sys.argv[1]
