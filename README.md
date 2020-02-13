@@ -5,3 +5,14 @@ cyclomatic complexities. (uses [plotly](https://plot.ly/) and
 
 ![js.png](examples/js.png "Example Treemap")
 
+## Installation
+
+```
+pip3 install -r requirements.txt
+```
+
+## Usage
+
+```
+python3 lizardmap.py /path/to/project
+```
