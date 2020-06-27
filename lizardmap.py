@@ -34,7 +34,7 @@ def calc_cc(file_name):
     if not ccs:
         return nloc, 0
 
-    return nloc , statistics.mean(ccs)
+    return nloc , statistics.sum(ccs)
 
 def main():
     startpath = sys.argv[1]
